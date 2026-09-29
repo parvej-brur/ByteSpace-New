@@ -224,12 +224,11 @@ npm run start
     </td>
     <td valign="top">
       <h3>Parvej Sikdar</h3>
-      <b>Frontend Software Engineer</b>
+      <b>Software Engineer (Frontend)</b>
       <p>
-        4+ years shipping production React, Next.js and TypeScript products, plus cross-platform
-        React Native apps. I have owned the frontend end to end as the sole engineer, from
-        architecture to App Store and Play Store releases, and led code reviews. Seeking a role with
-        ownership of architecture and delivery.
+        I build production React, Next.js and TypeScript products and cross-platform React Native
+        apps, with 4+ years of experience. As a sole frontend engineer, I owned architecture,
+        deployment and store releases. I am seeking a role with ownership of architecture and delivery.
       </p>
       <p>
         <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E">
