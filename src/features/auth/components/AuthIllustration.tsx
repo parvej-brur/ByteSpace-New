@@ -56,21 +56,21 @@ export function AuthIllustration({ darkCaption = false }: AuthIllustrationProps)
         alt=""
         width={177}
         height={177}
-        className="absolute top-80.25 left-93.25 max-w-none"
+        className="absolute top-80.25 left-93.25 h-auto w-44.25 max-w-none"
       />
       <Image
         src="/images/auth/donut.png"
         alt=""
         width={148}
         height={148}
-        className="absolute top-3.75 left-13 max-w-none"
+        className="absolute top-3.75 left-13 h-auto w-37 max-w-none"
       />
       <Image
         src="/images/auth/cone.png"
         alt=""
         width={190}
         height={190}
-        className="absolute top-99.25 -left-0.5 max-w-none"
+        className="absolute top-99.25 -left-0.5 h-auto w-47.5 max-w-none"
       />
     </div>
   );

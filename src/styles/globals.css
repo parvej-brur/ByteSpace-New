@@ -113,3 +113,23 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-persian-blue-900, #002bb0);
 }
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toast-progress {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
