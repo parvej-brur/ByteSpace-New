@@ -58,6 +58,7 @@ export function Hero() {
           width={516}
           height={483}
           priority
+          loading="eager"
           className="relative h-auto w-full drop-shadow-photo lg:h-135.25"
         />
         <HeroStatCards />
@@ -67,6 +68,7 @@ export function Hero() {
         alt=""
         width={1440}
         height={1024}
+        loading="eager"
         className="pointer-events-none absolute top-0 left-1/2 hidden h-256 w-360 max-w-none -translate-x-1/2 lg:block"
       />
     </section>
