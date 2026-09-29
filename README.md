@@ -32,10 +32,7 @@ content is typed static data, so there is no backend to set up.
 - [About the project](#about-the-project)
 - [Features](#features)
 - [Pages and routes](#pages-and-routes)
-- [Tech stack](#tech-stack)
 - [Getting started](#getting-started)
-- [Project structure](#project-structure)
-- [Design reference](#design-reference)
 - [Deployment](#deployment)
 - [Author](#author)
 
@@ -92,13 +89,38 @@ a creator profile, and the sign in and registration screens.
 
 ## About the project
 
-The project was built from a Figma file that contains 1440 px desktop frames only. Layouts for
-smaller screens are inferred from the desktop design. Pages are checked against the Figma frames
-by comparing rendered output and text positions.
+<p align="center">
+  <b>A modern learning marketplace, built with the precision of a design system.</b><br>
+  <sub>Discover courses &nbsp;·&nbsp; follow creators &nbsp;·&nbsp; start learning</sub>
+</p>
 
-The code follows a fixed folder architecture. Routes live in `app/`, business logic lives in
-`features/`, and shared code lives in `components/` and `lib/`. Feature boundaries are enforced
-by ESLint, so a feature cannot import another feature.
+ByteSpace New is a front-end implementation of an online-course platform. It started as a frontend
+assessment: turn a Figma design into a fast, accessible and maintainable Next.js application that
+matches the original as closely as practical.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h4>Design fidelity</h4>
+      Built from 1440 px Figma frames. Every page was checked against its frame by comparing
+      rendered output and text positions. Tablet and mobile layouts are inferred from the desktop design.
+    </td>
+    <td width="33%" valign="top">
+      <h4>Clean architecture</h4>
+      Routes in <code>app/</code>, logic in <code>features/</code>, shared code in
+      <code>components/</code> and <code>lib/</code>. ESLint fails the build if a feature imports another feature.
+    </td>
+    <td width="33%" valign="top">
+      <h4>Fast by default</h4>
+      Course and creator pages are generated at build time, fonts are self-hosted, and the only
+      runtime dependencies are Next.js and React.
+    </td>
+  </tr>
+</table>
+
+**Scope:** landing page (required), sign in, registration, course search, course details with
+lessons and reviews, creator profile and a custom 404. All content is typed static data, so no
+backend is needed.
 
 <p align="right"><a href="#top">Back to top</a></p>
 
@@ -142,28 +164,12 @@ Sample data exists for the course `build-digital-asset` and the creator `purepea
 
 ---
 
-## Tech stack
-
-| Tool             | Version   | Use                                                                 |
-| ---------------- | --------- | ------------------------------------------------------------------- |
-| **Next.js**      | 16.3.2    | App Router, static generation                                       |
-| **React**        | 19.2.8    | UI                                                                  |
-| **TypeScript**   | ^5        | Typed components and data                                           |
-| **Tailwind CSS** | ^4        | CSS-first setup, design tokens in `@theme` in `src/styles/globals.css` |
-| **ESLint**       | ^9        | Linting, with architecture boundaries in `eslint.config.mjs`        |
-
-There are no runtime dependencies beyond Next.js and React.
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
 ## Getting started
 
 **Prerequisites:** Node.js 20.9 or newer and npm.
 
 ```bash
-git clone GITHUB_URL
+git clone https://github.com/parvej-brur/ByteSpace-New.git
 cd "ByteSpace New"
 npm install
 npm run dev
@@ -193,43 +199,13 @@ npm run start
 
 ---
 
-## Project structure
-
-```
-src/
-  app/          Routing layer only: layouts, pages, not-found
-  features/     Business domains: landing, auth, courses, creators, not-found
-  components/   Shared UI used by 2+ features (layout, shared, ui)
-  providers/    Toast provider, mounted in the root layout
-  hooks/        Shared hooks
-  lib/          Shared infrastructure and constants (courses, routes, footer links)
-  styles/       Global styles, design tokens and fonts
-  types/        Global types
-public/         Static assets: fonts, icons, images
-docs/           README media: screenshots and demo video
-```
-
-A feature exposes one public surface through its `index.ts` and never imports another feature.
-Imports use the single `@/*` alias for `./src/*`.
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
-## Design reference
-
-The design is in Figma:
-[ByteSpace New Check website](https://www.figma.com/design/26TBgRjmpuxudcErJsHUfy/ByteSpace-New-Check-website)
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
 ## Deployment
 
-The app is deployed on Vercel. No environment variables are needed.
+<p align="center">
+  <a href="LIVE_URL_HERE"><img alt="View live site" src="https://img.shields.io/badge/View_Live_Site-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"></a>
+</p>
 
-**Live URL:** [LIVE_URL_HERE](LIVE_URL_HERE)
+<p align="center"><b>Live URL:</b> <a href="LIVE_URL_HERE">LIVE_URL_HERE</a></p>
 
 <p align="right"><a href="#top">Back to top</a></p>
 
@@ -237,9 +213,45 @@ The app is deployed on Vercel. No environment variables are needed.
 
 ## Author
 
-Built by **YOUR_NAME**.
+<div align="center">
 
-- GitHub: [GITHUB_URL](GITHUB_URL)
-- LinkedIn: [LINKEDIN_URL](LINKEDIN_URL)
+<a href="https://github.com/parvej-brur"><img src="https://github.com/parvej-brur.png?size=240" width="120" alt="Parvej Sikdar"></a>
+
+<h3>Parvej Sikdar</h3>
+
+<b>Software Engineer, Frontend</b><br>
+<sub>4+ years building production web and mobile products</sub>
+
+<br><br>
+
+<img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+<img alt="React_Native" src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+<img alt="Tailwind_CSS" src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8">
+
+<br>
+
+<table>
+  <tr>
+    <td align="center" width="33%"><b>4+ years</b><br><sub>shipping React, Next.js<br>and TypeScript products</sub></td>
+    <td align="center" width="33%"><b>End-to-end ownership</b><br><sub>architecture, development,<br>deployment and store releases</sub></td>
+    <td align="center" width="33%"><b>Team leadership</b><br><sub>code reviews for<br>a frontend team</sub></td>
+  </tr>
+</table>
+
+<p>
+  Sole frontend engineer on cross-platform apps released to the App Store and Play Store.<br>
+  Now looking for a frontend role with ownership of architecture and delivery.
+</p>
+
+<p>
+  <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-parvej--brur-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+</p>
+
+<sub>Thanks for reviewing this project. A star on the repository is appreciated.</sub>
+
+</div>
 
 <p align="right"><a href="#top">Back to top</a></p>
