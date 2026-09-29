@@ -88,3 +88,28 @@ body {
   color: var(--color-shuttle-gray-950);
   font-family: var(--font-sans);
 }
+
+/* Brand scrollbar: primary blue thumb on a light track. */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-persian-blue-800) var(--color-white);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-persian-blue-800);
+  border-radius: 999px;
+  border: 2px solid var(--color-white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-persian-blue-900, #002bb0);
+}
