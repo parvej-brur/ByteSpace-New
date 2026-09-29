@@ -18,7 +18,11 @@ content is typed static data, so there is no backend to set up.
   <img alt="Vercel"         src="https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white">
 </p>
 
-**[Live demo](LIVE_URL_HERE)** · **[Preview](#preview)** · **[Getting started](#getting-started)**
+<p>
+  <a href="https://byte-space-bd.vercel.app/"><img alt="Visit the live site" src="https://img.shields.io/badge/Visit_the_Live_Site-byte--space--bd.vercel.app-0034FF?style=for-the-badge&logo=vercel&logoColor=white"></a>
+</p>
+
+**[Preview](#preview)** · **[Product tour](#product-tour)** · **[Getting started](#getting-started)**
 
 </div>
 
@@ -28,15 +32,11 @@ content is typed static data, so there is no backend to set up.
 <summary><strong>Table of contents</strong></summary>
 
 - [Preview](#preview)
-- [Screenshots](#screenshots)
+- [Product tour](#product-tour)
 - [About the project](#about-the-project)
 - [Features](#features)
 - [Pages and routes](#pages-and-routes)
-- [Tech stack](#tech-stack)
 - [Getting started](#getting-started)
-- [Project structure](#project-structure)
-- [Design reference](#design-reference)
-- [Deployment](#deployment)
 - [Author](#author)
 
 </details>
@@ -45,43 +45,46 @@ content is typed static data, so there is no backend to set up.
 
 ## Preview
 
-![ByteSpace New walkthrough](docs/demo.gif)
+<p align="center">
+  <a href="docs/preview.mp4"><img src="docs/preview.gif" alt="ByteSpace New walkthrough (click for the full-quality MP4)" width="100%"></a>
+</p>
 
-**[Watch the full walkthrough (MP4)](docs/demo.mp4)**
+<p align="center"><sub>Click the animation to open the full-quality MP4.</sub></p>
 
 The walkthrough covers the home page, course search, a course with its lessons and reviews,
 a creator profile, and the sign in and registration screens.
 
-**Live demo:** [LIVE_URL_HERE](LIVE_URL_HERE)
+**Live site:** [https://byte-space-bd.vercel.app/](https://byte-space-bd.vercel.app/)
 
 <p align="right"><a href="#top">Back to top</a></p>
 
 ---
 
-## Screenshots
+## Product tour
 
-<table>
-  <tr>
-    <td align="center" width="50%"><img src="docs/screenshots/home.png" alt="Home page"><br><sub><b>Home</b></sub></td>
-    <td align="center" width="50%"><img src="docs/screenshots/search.png" alt="Search page"><br><sub><b>Search</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/course-details.png" alt="Course details"><br><sub><b>Course details</b></sub></td>
-    <td align="center"><img src="docs/screenshots/course-lessons.png" alt="Course lessons"><br><sub><b>Course lessons</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/course-reviews.png" alt="Course reviews"><br><sub><b>Course reviews</b></sub></td>
-    <td align="center"><img src="docs/screenshots/creator-profile.png" alt="Creator profile"><br><sub><b>Creator profile</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/login.png" alt="Login"><br><sub><b>Login</b></sub></td>
-    <td align="center"><img src="docs/screenshots/register.png" alt="Register"><br><sub><b>Register</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/not-found.png" alt="404 Not Found"><br><sub><b>404 Not Found</b></sub></td>
-    <td align="center"><img src="docs/screenshots/home-mobile.png" alt="Home on mobile" width="180"><br><sub><b>Home on mobile (390 px)</b></sub></td>
-  </tr>
-</table>
+### Home
+
+<p align="center"><img src="docs/screenshots/showcase-home.png" alt="ByteSpace New home page" width="100%"></p>
+
+<p align="center"><sub>Landing page, first screen. The full page also has partners, course categories, learning paths, testimonials and a footer.</sub></p>
+
+### Sign in and registration
+
+<p align="center"><img src="docs/screenshots/showcase-auth.png" alt="Sign in and registration pages" width="100%"></p>
+
+<p align="center"><sub>Sign in (left) and registration (right) share one split layout.</sub></p>
+
+### Course pages
+
+<p align="center"><img src="docs/screenshots/showcase-courses.png" alt="Course details, lessons and reviews" width="100%"></p>
+
+<p align="center"><sub>Course details, lessons and reviews (left to right), with the shared enrolment sidebar.</sub></p>
+
+### Creator profile
+
+<p align="center"><img src="docs/screenshots/showcase-creator.png" alt="Creator profile page" width="100%"></p>
+
+<p align="center"><sub>Creator profile with bio, follower stats and the creator's courses.</sub></p>
 
 <p align="right"><a href="#top">Back to top</a></p>
 
@@ -89,13 +92,37 @@ a creator profile, and the sign in and registration screens.
 
 ## About the project
 
-The project was built from a Figma file that contains 1440 px desktop frames only. Layouts for
-smaller screens are inferred from the desktop design. Pages are checked against the Figma frames
-by comparing rendered output and text positions.
+> **A modern learning marketplace, built with the precision of a design system.**
+>
+> *Discover courses &nbsp;·&nbsp; Follow creators &nbsp;·&nbsp; Start learning*
 
-The code follows a fixed folder architecture. Routes live in `app/`, business logic lives in
-`features/`, and shared code lives in `components/` and `lib/`. Feature boundaries are enforced
-by ESLint, so a feature cannot import another feature.
+ByteSpace New is a front-end implementation of an online-course platform. It started as a frontend
+assessment: turn a Figma design into a fast, accessible and maintainable Next.js application that
+matches the original as closely as practical.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h4>Design fidelity</h4>
+      Built from 1440 px Figma frames. Every page was checked against its frame by comparing
+      rendered output and text positions. Tablet and mobile layouts are inferred from the desktop design.
+    </td>
+    <td width="33%" valign="top">
+      <h4>Clean architecture</h4>
+      Routes in <code>app/</code>, logic in <code>features/</code>, shared code in
+      <code>components/</code> and <code>lib/</code>. ESLint fails the build if a feature imports another feature.
+    </td>
+    <td width="33%" valign="top">
+      <h4>Fast by default</h4>
+      Course and creator pages are generated at build time, fonts are self-hosted, and the only
+      runtime dependencies are Next.js and React.
+    </td>
+  </tr>
+</table>
+
+**Scope:** landing page (required), sign in, registration, course search, course details with
+lessons and reviews, creator profile and a custom 404. All content is typed static data, so no
+backend is needed.
 
 <p align="right"><a href="#top">Back to top</a></p>
 
@@ -139,28 +166,12 @@ Sample data exists for the course `build-digital-asset` and the creator `purepea
 
 ---
 
-## Tech stack
-
-| Tool             | Version   | Use                                                                 |
-| ---------------- | --------- | ------------------------------------------------------------------- |
-| **Next.js**      | 16.3.2    | App Router, static generation                                       |
-| **React**        | 19.2.8    | UI                                                                  |
-| **TypeScript**   | ^5        | Typed components and data                                           |
-| **Tailwind CSS** | ^4        | CSS-first setup, design tokens in `@theme` in `src/styles/globals.css` |
-| **ESLint**       | ^9        | Linting, with architecture boundaries in `eslint.config.mjs`        |
-
-There are no runtime dependencies beyond Next.js and React.
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
 ## Getting started
 
 **Prerequisites:** Node.js 20.9 or newer and npm.
 
 ```bash
-git clone GITHUB_URL
+git clone https://github.com/parvej-brur/ByteSpace-New.git
 cd "ByteSpace New"
 npm install
 npm run dev
@@ -190,53 +201,35 @@ npm run start
 
 ---
 
-## Project structure
-
-```
-src/
-  app/          Routing layer only: layouts, pages, not-found
-  features/     Business domains: landing, auth, courses, creators, not-found
-  components/   Shared UI used by 2+ features (layout, shared, ui)
-  providers/    Toast provider, mounted in the root layout
-  hooks/        Shared hooks
-  lib/          Shared infrastructure and constants (courses, routes, footer links)
-  styles/       Global styles, design tokens and fonts
-  types/        Global types
-public/         Static assets: fonts, icons, images
-docs/           README media: screenshots and demo video
-```
-
-A feature exposes one public surface through its `index.ts` and never imports another feature.
-Imports use the single `@/*` alias for `./src/*`.
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
-## Design reference
-
-The design is in Figma:
-[ByteSpace New Check website](https://www.figma.com/design/26TBgRjmpuxudcErJsHUfy/ByteSpace-New-Check-website)
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
-## Deployment
-
-The app is deployed on Vercel. No environment variables are needed.
-
-**Live URL:** [LIVE_URL_HERE](LIVE_URL_HERE)
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
 ## Author
 
-Built by **YOUR_NAME**.
-
-- GitHub: [GITHUB_URL](GITHUB_URL)
-- LinkedIn: [LINKEDIN_URL](LINKEDIN_URL)
+<table>
+  <tr>
+    <td width="200" align="center" valign="top">
+      <a href="https://github.com/parvej-brur"><img src="https://github.com/parvej-brur.png?size=240" width="140" alt="Parvej Sikdar"></a>
+      <br><br>
+      <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+      <br>
+      <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+    </td>
+    <td valign="top">
+      <h3>Parvej Sikdar</h3>
+      <b>Software Engineer (Frontend)</b>
+      <p>
+        I build production React, Next.js and TypeScript products and cross-platform React Native
+        apps, with 4+ years of experience. As a sole frontend engineer, I owned architecture,
+        deployment and store releases. I am seeking a role with ownership of architecture and delivery.
+      </p>
+      <p>
+        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E">
+        <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+        <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+        <img alt="React_Native" src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+        <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+      </p>
+    </td>
+  </tr>
+</table>
 
 <p align="right"><a href="#top">Back to top</a></p>
