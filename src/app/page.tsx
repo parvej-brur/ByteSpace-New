@@ -1,10 +1,12 @@
-import { Header } from "@/features/landing";
+import { Header, Hero } from "@/features/landing";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main />
+      <main>
+        <Hero />
+      </main>
     </>
   );
 }
