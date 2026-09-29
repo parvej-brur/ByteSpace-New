@@ -1,10 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ComingSoonLink } from "@/components/shared/ComingSoonLink";
 import { FOOTER_COLUMNS, LEGAL_LINKS } from "@/lib/constants/footer-links";
 import { ROUTES } from "@/lib/constants/routes";
 
 const linkClass =
   "rounded-sm outline-offset-2 focus-visible:outline-2 focus-visible:outline-persian-blue-800";
+const hoverLinkClass =
+  "transition-colors duration-200 hover:text-persian-blue-800 hover:underline hover:decoration-electric-lime-500 hover:decoration-2 hover:underline-offset-4";
+
+function FooterLinkItem({ label, href, className }: { label: string; href?: string; className: string }) {
+  return href ? (
+    <Link href={href} className={className}>
+      {label}
+    </Link>
+  ) : (
+    <ComingSoonLink feature={label} className={className}>
+      {label}
+    </ComingSoonLink>
+  );
+}
 
 export function Footer() {
   return (
@@ -48,13 +63,15 @@ export function Footer() {
 
           <nav aria-label="Footer" className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:w-145">
             {FOOTER_COLUMNS.map((links) => (
-              <div key={links[0]} className="flex flex-col gap-6 lg:pt-12">
+              <div key={links[0].label} className="flex flex-col gap-6 lg:pt-12">
                 <ul className="flex flex-col gap-4">
-                  {links.map((label) => (
+                  {links.map(({ label, href }) => (
                     <li key={label}>
-                      <Link href="#" className={`block text-body-s leading-[22.4px] text-shuttle-gray-950 ${linkClass}`}>
-                        {label}
-                      </Link>
+                      <FooterLinkItem
+                        label={label}
+                        href={href}
+                        className={`block w-fit text-body-s leading-[22.4px] text-shuttle-gray-950 ${hoverLinkClass} ${linkClass}`}
+                      />
                     </li>
                   ))}
                 </ul>
@@ -70,11 +87,9 @@ export function Footer() {
               @ 2023 ByteSpace. All rights reserved.
             </p>
             <ul className="flex flex-wrap gap-6 text-body-xs text-shuttle-gray-950">
-              {LEGAL_LINKS.map((label) => (
+              {LEGAL_LINKS.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href="#" className={linkClass}>
-                    {label}
-                  </Link>
+                  <FooterLinkItem label={label} href={href} className={`${hoverLinkClass} ${linkClass}`} />
                 </li>
               ))}
             </ul>
