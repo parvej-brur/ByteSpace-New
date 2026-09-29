@@ -45,9 +45,13 @@ content is typed static data, so there is no backend to set up.
 
 ## Preview
 
-![ByteSpace New walkthrough](docs/demo.gif)
+<div align="center">
+  <video src="docs/preview.mp4" poster="docs/screenshots/home.png" width="100%" controls autoplay loop muted playsinline>
+    <img alt="ByteSpace New walkthrough" src="docs/demo.gif">
+  </video>
+</div>
 
-**[Watch the full walkthrough (MP4)](docs/demo.mp4)**
+**[Watch the full walkthrough (MP4)](docs/preview.mp4)**
 
 The walkthrough covers the home page, course search, a course with its lessons and reviews,
 a creator profile, and the sign in and registration screens.
@@ -60,28 +64,29 @@ a creator profile, and the sign in and registration screens.
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td align="center" width="50%"><img src="docs/screenshots/home.png" alt="Home page"><br><sub><b>Home</b></sub></td>
-    <td align="center" width="50%"><img src="docs/screenshots/search.png" alt="Search page"><br><sub><b>Search</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/course-details.png" alt="Course details"><br><sub><b>Course details</b></sub></td>
-    <td align="center"><img src="docs/screenshots/course-lessons.png" alt="Course lessons"><br><sub><b>Course lessons</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/course-reviews.png" alt="Course reviews"><br><sub><b>Course reviews</b></sub></td>
-    <td align="center"><img src="docs/screenshots/creator-profile.png" alt="Creator profile"><br><sub><b>Creator profile</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/login.png" alt="Login"><br><sub><b>Login</b></sub></td>
-    <td align="center"><img src="docs/screenshots/register.png" alt="Register"><br><sub><b>Register</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/not-found.png" alt="404 Not Found"><br><sub><b>404 Not Found</b></sub></td>
-    <td align="center"><img src="docs/screenshots/home-mobile.png" alt="Home on mobile" width="180"><br><sub><b>Home on mobile (390 px)</b></sub></td>
-  </tr>
-</table>
+### Home
+
+<p align="center"><img src="docs/screenshots/showcase-home.png" alt="ByteSpace New home page" width="100%"></p>
+
+<p align="center"><sub>Landing page, first screen. The full page also has partners, course categories, learning paths, testimonials and a footer.</sub></p>
+
+### Sign in and registration
+
+<p align="center"><img src="docs/screenshots/showcase-auth.png" alt="Sign in and registration pages" width="100%"></p>
+
+<p align="center"><sub>Sign in (left) and registration (right) share one split layout.</sub></p>
+
+### Course pages
+
+<p align="center"><img src="docs/screenshots/showcase-courses.png" alt="Course details, lessons and reviews" width="100%"></p>
+
+<p align="center"><sub>Course details, lessons and reviews (left to right), with the shared enrolment sidebar.</sub></p>
+
+### Creator profile
+
+<p align="center"><img src="docs/screenshots/showcase-creator.png" alt="Creator profile page" width="100%"></p>
+
+<p align="center"><sub>Creator profile with bio, follower stats and the creator's courses.</sub></p>
 
 <p align="right"><a href="#top">Back to top</a></p>
 
