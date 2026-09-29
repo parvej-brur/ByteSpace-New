@@ -27,26 +27,6 @@ export const COURSE_TABS = [
   "Cooking",
 ];
 
-export const COURSES = [
-  { title: "Learn Figma from Basic", cover: "/images/courses/cover-1.jpg" },
-  { title: "Build Digital Asset", cover: "/images/courses/cover-2.jpg" },
-  { title: "the Power of Big Data", cover: "/images/courses/cover-3.jpg" },
-  { title: "Balancing Productivity an…", cover: "/images/courses/cover-4.jpg" },
-  { title: "Mastering Money Manage…", cover: "/images/courses/cover-5.jpg" },
-  { title: "From Idea to Startup Succ…", cover: "/images/courses/cover-6.jpg" },
-];
-
-export const COURSE_META = {
-  lessons: "17 Lessons",
-  duration: "2 hours 16 mins",
-  comments: "59 Comments",
-  author: "purepearl studio",
-  level: "Beginner",
-  rating: "4.5",
-  price: "$25",
-  priceUnit: "/lifetime",
-};
-
 export const LEARNING_PATHS = [
   { label: "Design", icon: "/icons/categories/design.svg" },
   { label: "Development", icon: "/icons/categories/development.svg" },
@@ -54,4 +34,34 @@ export const LEARNING_PATHS = [
   { label: "Business", icon: "/icons/categories/business.svg" },
   { label: "Marketing", icon: "/icons/categories/marketing.svg" },
   { label: "Photography", icon: "/icons/categories/photography.svg" },
+];
+
+export const TESTIMONIALS = [
+  {
+    name: "Sarah M.",
+    role: "Enthusiastic Learner",
+    avatar: "/images/testimonials/sarah.png",
+    nameLeading: "leading-6",
+    minHeight: "md:min-h-108",
+    quote:
+      "\"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning.\"",
+  },
+  {
+    name: "James L.",
+    role: "Lifelong Learner",
+    avatar: "/images/testimonials/james.png",
+    nameLeading: "leading-7",
+    minHeight: "md:min-h-108",
+    quote:
+      "\"I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development.\"",
+  },
+  {
+    name: "Alex B.",
+    role: "Inspired Creator",
+    avatar: "/images/testimonials/alex.png",
+    nameLeading: "leading-7",
+    minHeight: "md:min-h-101.75",
+    quote:
+      "\"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally.\"",
+  },
 ];
