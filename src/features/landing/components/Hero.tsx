@@ -27,7 +27,7 @@ export function Hero() {
         <form
           role="search"
           action="/#courses"
-          className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-start"
+          className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center"
         >
           <label className="flex h-13 flex-1 items-center gap-2 rounded-3xl bg-white px-6 py-3 sm:w-115.25 sm:flex-none">
             <Image src="/icons/search.svg" alt="" width={24} height={24} />
@@ -41,7 +41,7 @@ export function Hero() {
           </label>
           <button
             type="submit"
-            className="cursor-pointer rounded-3xl bg-electric-lime-400 px-6 py-3 text-label-l text-shuttle-gray-950 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white"
+            className="h-13 cursor-pointer rounded-3xl bg-electric-lime-400 px-6 text-label-l text-shuttle-gray-950 outline-offset-2 focus-visible:outline-2 focus-visible:outline-white"
           >
             Search
           </button>
