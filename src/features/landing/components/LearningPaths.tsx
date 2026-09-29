@@ -10,7 +10,7 @@ export function LearningPaths() {
         titleClassName="text-2xl leading-[1.2] font-semibold tracking-[-0.01em] sm:text-4xl"
         description="At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories."
       />
-      <ul className="mx-auto mt-17 flex max-w-300.5 flex-wrap justify-center gap-10">
+      <ul className="mx-auto mt-17 flex max-w-300.5 flex-wrap justify-center gap-4 sm:gap-10">
         {LEARNING_PATHS.map(({ label, icon }) => (
           <li
             key={label}
