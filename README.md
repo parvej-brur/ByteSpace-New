@@ -213,45 +213,30 @@ npm run start
 
 ## Author
 
-<div align="center">
-
-<a href="https://github.com/parvej-brur"><img src="https://github.com/parvej-brur.png?size=240" width="120" alt="Parvej Sikdar"></a>
-
-<h3>Parvej Sikdar</h3>
-
-<b>Software Engineer, Frontend</b><br>
-<sub>4+ years building production web and mobile products</sub>
-
-<br><br>
-
-<img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
-<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-<img alt="React_Native" src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB">
-<img alt="Tailwind_CSS" src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8">
-
-<br>
-
 <table>
   <tr>
-    <td align="center" width="33%"><b>4+ years</b><br><sub>shipping React, Next.js<br>and TypeScript products</sub></td>
-    <td align="center" width="33%"><b>End-to-end ownership</b><br><sub>architecture, development,<br>deployment and store releases</sub></td>
-    <td align="center" width="33%"><b>Team leadership</b><br><sub>code reviews for<br>a frontend team</sub></td>
+    <td width="150" align="center" valign="top">
+      <a href="https://github.com/parvej-brur"><img src="https://github.com/parvej-brur.png?size=240" width="120" alt="Parvej Sikdar"></a>
+    </td>
+    <td valign="top">
+      <h3>Parvej Sikdar</h3>
+      <b>Frontend Software Engineer</b>
+      <p>
+        I have spent the last four years building React, Next.js and TypeScript products for
+        production, along with cross-platform apps in React Native. On my recent projects I was the
+        only frontend engineer, so I handled everything from the architecture to deployment and the
+        App Store and Play Store releases. I also reviewed code for the frontend team.
+      </p>
+      <p>
+        I built ByteSpace New to show how I structure and ship a frontend. I am looking for a role
+        where I can own that work.
+      </p>
+      <p>
+        <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+        <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+      </p>
+    </td>
   </tr>
 </table>
-
-<p>
-  Sole frontend engineer on cross-platform apps released to the App Store and Play Store.<br>
-  Now looking for a frontend role with ownership of architecture and delivery.
-</p>
-
-<p>
-  <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-parvej--brur-181717?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-</p>
-
-<sub>Thanks for reviewing this project. A star on the repository is appreciated.</sub>
-
-</div>
 
 <p align="right"><a href="#top">Back to top</a></p>
