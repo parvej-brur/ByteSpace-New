@@ -76,13 +76,11 @@
   --text-body-s--line-height: 1.6;
   --text-body-xs: 12px;
   --text-body-xs--line-height: 1.6;
+}
 
-  /* Layered shadow used on the hero photo (follows the cut-out's alpha) */
-  --drop-shadow-photo:
-    51.04px 72.91px 72px rgb(0 0 0 / 0.13), 37.12px 53.03px 56px rgb(0 0 0 / 0.11),
-    25.84px 36.91px 36px rgb(0 0 0 / 0.1), 16.95px 24.21px 24px rgb(0 0 0 / 0.09),
-    10.21px 14.58px 16.09px rgb(0 0 0 / 0.08), 5.38px 7.69px 9.57px rgb(0 0 0 / 0.07),
-    2.23px 3.19px 5.72px rgb(0 0 0 / 0.06), 0.52px 0.74px 3.04px rgb(0 0 0 / 0.04);
+/* Eight parallel Figma shadows on cut-out photos; the filter lives in PhotoShadowFilter. */
+@utility drop-shadow-photo {
+  filter: url(#photo-shadow);
 }
 
 body {
