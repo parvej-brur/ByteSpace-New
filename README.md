@@ -45,13 +45,11 @@ content is typed static data, so there is no backend to set up.
 
 ## Preview
 
-<div align="center">
-  <video src="docs/preview.mp4" poster="docs/screenshots/home.png" width="100%" controls autoplay loop muted playsinline>
-    <img alt="ByteSpace New walkthrough" src="docs/demo.gif">
-  </video>
-</div>
+<p align="center">
+  <a href="docs/preview.mp4"><img src="docs/preview.gif" alt="ByteSpace New walkthrough (click for the full-quality MP4)" width="100%"></a>
+</p>
 
-**[Watch the full walkthrough (MP4)](docs/preview.mp4)**
+<p align="center"><sub>Click the animation to open the full-quality MP4.</sub></p>
 
 The walkthrough covers the home page, course search, a course with its lessons and reviews,
 a creator profile, and the sign in and registration screens.
