@@ -1,4 +1,4 @@
-import { Header, Hero } from "@/features/landing";
+import { Header, Hero, LearningPaths, PartnerLogos } from "@/features/landing";
 
 export default function Home() {
   return (
@@ -6,6 +6,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <PartnerLogos />
+        <LearningPaths />
       </main>
     </>
   );
