@@ -18,7 +18,11 @@ content is typed static data, so there is no backend to set up.
   <img alt="Vercel"         src="https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white">
 </p>
 
-**[Live demo](LIVE_URL_HERE)** · **[Preview](#preview)** · **[Getting started](#getting-started)**
+<p>
+  <a href="https://byte-space-bd.vercel.app/"><img alt="Visit the live site" src="https://img.shields.io/badge/Visit_the_Live_Site-byte--space--bd.vercel.app-0034FF?style=for-the-badge&logo=vercel&logoColor=white"></a>
+</p>
+
+**[Preview](#preview)** · **[Product tour](#product-tour)** · **[Getting started](#getting-started)**
 
 </div>
 
@@ -28,12 +32,11 @@ content is typed static data, so there is no backend to set up.
 <summary><strong>Table of contents</strong></summary>
 
 - [Preview](#preview)
-- [Screenshots](#screenshots)
+- [Product tour](#product-tour)
 - [About the project](#about-the-project)
 - [Features](#features)
 - [Pages and routes](#pages-and-routes)
 - [Getting started](#getting-started)
-- [Deployment](#deployment)
 - [Author](#author)
 
 </details>
@@ -51,13 +54,13 @@ content is typed static data, so there is no backend to set up.
 The walkthrough covers the home page, course search, a course with its lessons and reviews,
 a creator profile, and the sign in and registration screens.
 
-**Live demo:** [LIVE_URL_HERE](LIVE_URL_HERE)
+**Live site:** [https://byte-space-bd.vercel.app/](https://byte-space-bd.vercel.app/)
 
 <p align="right"><a href="#top">Back to top</a></p>
 
 ---
 
-## Screenshots
+## Product tour
 
 ### Home
 
@@ -89,10 +92,9 @@ a creator profile, and the sign in and registration screens.
 
 ## About the project
 
-<p align="center">
-  <b>A modern learning marketplace, built with the precision of a design system.</b><br>
-  <sub>Discover courses &nbsp;·&nbsp; follow creators &nbsp;·&nbsp; start learning</sub>
-</p>
+> **A modern learning marketplace, built with the precision of a design system.**
+>
+> *Discover courses &nbsp;·&nbsp; Follow creators &nbsp;·&nbsp; Start learning*
 
 ByteSpace New is a front-end implementation of an online-course platform. It started as a frontend
 assessment: turn a Figma design into a fast, accessible and maintainable Next.js application that
@@ -194,18 +196,6 @@ npm run start
 | `npm run lint`      | Lint with ESLint             |
 | `npm run lint:fix`  | Lint and auto fix            |
 | `npm run typecheck` | Type check with `tsc`        |
-
-<p align="right"><a href="#top">Back to top</a></p>
-
----
-
-## Deployment
-
-<p align="center">
-  <a href="LIVE_URL_HERE"><img alt="View live site" src="https://img.shields.io/badge/View_Live_Site-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"></a>
-</p>
-
-<p align="center"><b>Live URL:</b> <a href="LIVE_URL_HERE">LIVE_URL_HERE</a></p>
 
 <p align="right"><a href="#top">Back to top</a></p>
 
