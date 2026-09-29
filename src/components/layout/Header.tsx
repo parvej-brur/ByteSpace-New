@@ -37,13 +37,13 @@ export function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-20">
       <div className="relative mx-auto flex h-20 max-w-360 items-center justify-between px-4 sm:px-8 lg:h-30 lg:px-30">
-        <div className="lg:ml-0.5 lg:-translate-y-0.5">
+        <div className="lg:ml-0.5">
           <Logo />
         </div>
 
         <nav
           aria-label="Main"
-          className="absolute left-[calc(50%-0.5px)] hidden -translate-x-1/2 gap-6 lg:flex"
+          className="absolute left-[calc(50%-0.5px)] hidden -translate-x-1/2 items-center gap-6 lg:flex"
         >
           {NAV_LINKS.map(({ label, href }, index) => (
             <Link
