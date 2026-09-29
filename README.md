@@ -215,25 +215,29 @@ npm run start
 
 <table>
   <tr>
-    <td width="150" align="center" valign="top">
-      <a href="https://github.com/parvej-brur"><img src="https://github.com/parvej-brur.png?size=240" width="120" alt="Parvej Sikdar"></a>
+    <td width="200" align="center" valign="top">
+      <a href="https://github.com/parvej-brur"><img src="https://github.com/parvej-brur.png?size=240" width="140" alt="Parvej Sikdar"></a>
+      <br><br>
+      <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+      <br>
+      <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
     </td>
     <td valign="top">
       <h3>Parvej Sikdar</h3>
       <b>Frontend Software Engineer</b>
       <p>
-        I have spent the last four years building React, Next.js and TypeScript products for
-        production, along with cross-platform apps in React Native. On my recent projects I was the
-        only frontend engineer, so I handled everything from the architecture to deployment and the
-        App Store and Play Store releases. I also reviewed code for the frontend team.
+        4+ years shipping production React, Next.js and TypeScript products, plus cross-platform
+        React Native apps. I have owned the frontend end to end as the sole engineer, from
+        architecture to App Store and Play Store releases, and led code reviews. Seeking a role with
+        ownership of architecture and delivery.
       </p>
       <p>
-        I built ByteSpace New to show how I structure and ship a frontend. I am looking for a role
-        where I can own that work.
-      </p>
-      <p>
-        <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
-        <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E">
+        <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+        <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+        <img alt="React_Native" src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+        <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
       </p>
     </td>
   </tr>
