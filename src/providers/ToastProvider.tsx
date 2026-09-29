@@ -1,7 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { createContext, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 
 interface Toast {
   id: number;
@@ -42,7 +50,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
       <div
         role="status"
         aria-live="polite"
-        className="pointer-events-none fixed top-24 right-4 z-50 flex w-[calc(100%-2rem)] max-w-96 justify-end sm:right-6"
+        className="pointer-events-none fixed top-4 right-4 z-100 flex w-[calc(100%-2rem)] max-w-96 justify-end sm:top-6 sm:right-6"
       >
         {toast && (
           <div
@@ -54,9 +62,13 @@ export function ToastProvider({ children }: { children: ReactNode }) {
                 <Image src="/icons/logo.svg" alt="" width={20} height={22} />
               </span>
               <div className="flex flex-col gap-1">
-                <p className="text-label-l text-shuttle-gray-950">{toast.title}</p>
+                <p className="text-label-l text-shuttle-gray-950">
+                  {toast.title}
+                </p>
                 {toast.description && (
-                  <p className="text-body-s text-shuttle-gray-700">{toast.description}</p>
+                  <p className="text-body-s text-shuttle-gray-700">
+                    {toast.description}
+                  </p>
                 )}
               </div>
             </div>
@@ -66,7 +78,13 @@ export function ToastProvider({ children }: { children: ReactNode }) {
               onClick={dismiss}
               className="absolute top-3 right-3 grid size-7 cursor-pointer place-items-center rounded-full text-shuttle-gray-400 outline-offset-2 transition-colors hover:bg-shuttle-gray-50 hover:text-shuttle-gray-950 focus-visible:outline-2 focus-visible:outline-persian-blue-800"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
                 <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
               </svg>
             </button>
