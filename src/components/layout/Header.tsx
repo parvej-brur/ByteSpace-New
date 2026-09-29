@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ROUTES } from "@/lib/constants/routes";
 
 const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Courses", href: "/#courses" },
-  { label: "Creators", href: "/#creators" },
+  { label: "Home", href: ROUTES.home },
+  { label: "Courses", href: ROUTES.courses },
+  { label: "Creators", href: ROUTES.creator },
 ];
 
 const AUTH_LINKS = [
-  { label: "Sign In", href: "/login" },
-  { label: "Join Us", href: "/register" },
+  { label: "Sign In", href: ROUTES.login },
+  { label: "Join Us", href: ROUTES.register },
 ];
 
 const linkClass =
@@ -17,7 +18,7 @@ const linkClass =
 
 function Logo() {
   return (
-    <Link href="/" className={`flex items-center gap-2 ${linkClass}`} aria-label="ByteSpace home">
+    <Link href={ROUTES.home} className={`flex items-center gap-2 ${linkClass}`} aria-label="ByteSpace home">
       <Image src="/icons/logo.svg" alt="" width={29} height={32} priority />
       <span className="font-brand text-[24px] font-bold text-shuttle-gray-50">ByteSpace</span>
     </Link>
@@ -26,7 +27,7 @@ function Logo() {
 
 function CartLink() {
   return (
-    <Link href="/#courses" className={linkClass} aria-label="Shopping bag">
+    <Link href={ROUTES.courses} className={linkClass} aria-label="Shopping bag">
       <Image src="/icons/bag.svg" alt="" width={24} height={24} />
     </Link>
   );
