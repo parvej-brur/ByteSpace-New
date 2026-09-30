@@ -94,7 +94,7 @@ a creator profile, and the sign in and registration screens.
 
 > **A modern learning marketplace, built with the precision of a design system.**
 >
-> *Discover courses &nbsp;·&nbsp; Follow creators &nbsp;·&nbsp; Start learning*
+> _Discover courses &nbsp;·&nbsp; Follow creators &nbsp;·&nbsp; Start learning_
 
 ByteSpace New is a front-end implementation of an online-course platform. It started as a frontend
 assessment: turn a Figma design into a fast, accessible and maintainable Next.js application that
@@ -210,7 +210,7 @@ npm run start
       <br><br>
       <a href="https://github.com/parvej-brur"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
       <br>
-      <a href="LINKEDIN_URL"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+      <a href="https://www.linkedin.com/in/parvej-sikdar/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
     </td>
     <td valign="top">
       <h3>Parvej Sikdar</h3>
